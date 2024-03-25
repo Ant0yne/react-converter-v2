@@ -6,17 +6,17 @@ const Button = ({ setCounts, type, countNum, counts, count }) => {
 			// console.log("add");
 			const tempCount = [...counts];
 			tempCount[countNum] = tempCount[countNum] + 1;
-			setCounts((counts = tempCount));
+			setCounts(tempCount);
 		} else if (type === "sub" && count > 0) {
 			// console.log("sub");
 			const tempCount = [...counts];
 			tempCount[countNum] = tempCount[countNum] - 1;
-			setCounts((counts = tempCount));
+			setCounts(tempCount);
 		} else if (type === "reset" && count > 0) {
 			// console.log("reset");
 			const tempCount = [...counts];
 			tempCount[countNum] = 0;
-			setCounts((counts = tempCount));
+			setCounts(tempCount);
 		}
 	};
 	return (
