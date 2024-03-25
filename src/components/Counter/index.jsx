@@ -12,7 +12,9 @@ const Counter = ({ count, setCounts, countNum, counts }) => {
 				counts={counts}
 				count={count}
 			/>
-			<h2>{count}</h2>
+			<div>
+				<h2>{count}</h2>
+			</div>
 			<Button
 				setCounts={setCounts}
 				type="add"
@@ -20,7 +22,6 @@ const Counter = ({ count, setCounts, countNum, counts }) => {
 				counts={counts}
 				count={count}
 			/>
-			<p>test</p>
 			<Button
 				setCounts={setCounts}
 				type="reset"

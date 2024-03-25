@@ -1,3 +1,10 @@
 .hidden {
 	visibility: hidden;
 }
+
+.plus-minus {
+	background: none;
+	color: var(--black);
+	font-weight: bold;
+	font-size: 3rem;
+}

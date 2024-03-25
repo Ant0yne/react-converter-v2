@@ -22,12 +22,16 @@ const Button = ({ setCounts, type, countNum, counts, count }) => {
 	return (
 		<>
 			{type === "add" && (
-				<button className={count >= 10 ? "hidden" : ""} onClick={modifyCount}>
+				<button
+					className={count >= 10 ? "hidden plus-minus" : "plus-minus"}
+					onClick={modifyCount}>
 					+
 				</button>
 			)}
 			{type === "sub" && (
-				<button className={count <= 0 ? "hidden" : ""} onClick={modifyCount}>
+				<button
+					className={count <= 0 ? "hidden plus-minus" : "plus-minus"}
+					onClick={modifyCount}>
 					-
 				</button>
 			)}
